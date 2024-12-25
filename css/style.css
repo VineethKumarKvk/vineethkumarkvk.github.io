@@ -216,3 +216,68 @@
 .testimonial-carousel .owl-dot.active {
   background: var(--primary);
 }
+
+.about-me-container {
+  padding: 20px;
+  background-color: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-me-card {
+  background-color: var(--dark);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  text-align: center;
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.info-item i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 5px;
+  color: var(--primary);;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-sm-6, .col-sm-12 {
+  flex: 1 1 calc(50% - 10px);
+  margin: 5px;
+}
+
+.col-sm-12 {
+  flex: 1 1 100%;
+}
+
+@media (max-width: 768px) {
+  .info-item {
+      font-size: 14px;
+  }
+
+  .info-item i {
+      font-size: 18px;
+  }
+}
