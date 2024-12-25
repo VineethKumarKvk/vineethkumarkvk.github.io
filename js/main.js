@@ -153,5 +153,24 @@
 
     });
 
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+    
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = "vineethkumar0005@gmail.com"
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+    
+        // Construct the mailto link
+        const mailtoLink = `mailto:${encodeURIComponent(email)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            `Hello,\n\nMy name is ${name}.\n\nMessage:\n${message}\n\nBest Regards,\n${name}`
+        )}`;
+    
+        // Open the mail client
+        window.location.href = mailtoLink;
+    });
+    
+
 })(jQuery);
 
